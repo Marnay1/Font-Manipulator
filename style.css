@@ -1,0 +1,23 @@
+body{
+    background-size: cover;
+}
+.copy_right_footer{
+    background-color: lawngreen;
+    font-style: italic;
+    border: 5px 5px skyblue;
+    padding: 20px;
+    box-shadow: 5px 5px 6px maroon;
+    margin: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+#bif{
+    background-color: forestgreen;
+}
+canvas{
+    box-shadow: 5px 5px 6px maroon;
+    border: 5px 5px khaki;
+    padding: 20px;
+    margin: 10px;
+}
