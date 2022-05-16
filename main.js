@@ -1,3 +1,6 @@
+leftWristX= 0;
+rightWristX= 0;
+difference= 0;
 function preload(){
 
 }
@@ -15,5 +18,15 @@ function modelLoaded(){
 function gotPoses(results){
     if(results.length> 0){
         console.log(results);
+        leftWristX = results[0].pose.leftWrist.x;
+        rightWristX= results[0].pose.rightWrist.x;
+        difference= floor(leftWristX-rightWristX);
+        
     }
+}
+function draw(){
+    background("brown");
+    textSize(difference);
+    fill("skyblue");
+    text("Marnay", 40, 200)
 }
